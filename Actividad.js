@@ -11,7 +11,7 @@
             
 
             const promesa = new Promise((resolve, reject) => {
-                if ((num1) || (num2) || (num3)) {
+                if (isNaN(num1) || isNaN(num2) || isNaN(num3)) {
                     reject("Por favor, ingresa valores numéricos válidos.");
                     return;
                 }
